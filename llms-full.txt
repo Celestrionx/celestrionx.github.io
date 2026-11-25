@@ -1,0 +1,81 @@
+# CelestrionX — Full Ecosystem Reference
+
+> CelestrionX (`https://www.celestrionx.com`) is an independent systems engineering, autonomous agent tooling, and digital publishing umbrella.
+> Motto: Systems · Intelligence · Culture.
+
+## 1. Architecture Overview
+
+CelestrionX organizes engineering work across three operational pillars:
+
+1. **Systems & Runtimes**: Low-overhead execution sandboxes, headless audio graph compilation, and deterministic vector/UI engines.
+2. **Agentic Architectures & Knowledge**: Markdown-driven state operating systems, Model Context Protocol (MCP) servers, and isolated git-worktree execution loops.
+3. **Digital Culture & Preservation**: Bilingual publishing platforms (`stellarpub.celestrionx.com`), compiled digital storybooks, and OTA Godot 4 `.pck` content delivery.
+
+---
+
+## 2. Open-Source Systems
+
+### Auralis (`v0.2.0`)
+- **Repository**: https://github.com/Celestrionx/auralis
+- **License**: MIT
+- **Summary**: Headless Audio Graph Compiler & Auditory Telemetry Engine in pure Rust for autonomous AI agents.
+- **Capabilities**:
+  - Declarative JSON/YAML `Song` manifests with reusable `Pattern` blocks and `Clip` scheduling (`repeat`, `transpose_semitones`, `velocity_scale`), chords, portamento (`slide_to_midi`), and seamless `LoopPoints`.
+  - Three synthesis backends: `Synth` (multi-waveform oscillators, ADSR/pitch envelopes, unison detune with constant-power stereo spread, vibrato LFO, 2-op FM, dynamic filters), `SoundFont` (`rustysynth` SF2 with MIDI pitch bend & CC64 sustain), and `Sample` (cached WAV one-shot/pitched playback).
+  - Multi-threaded track rendering (`std::thread::scope`) with `LowPass` / `HighPass` / `BandPass` biquad filters, beat-synced `FilterSweep`, `Saturate`, `SoftClip`, `Compressor`, track-keyed `Sidechain`, `StereoWidth`, ping-pong `Delay`, Schroeder `Reverb`, and `master_fx`.
+  - Export targets: 16/32-bit WAV with RIFF `smpl` loop chunks, OGG Vorbis with Godot `LOOPSTART`/`LOOPLENGTH` tags, and equal-length `--stems`.
+  - Closed-loop telemetry: peak/RMS dBFS, crest factor, stereo correlation, side-to-mid ratio, 32-window Hann FFT spectral energy ratios, time-sliced `sections`, and automated mix `diagnostics`.
+- **CLI Quick Start**:
+  ```bash
+  cargo build --release
+  cargo run -- init demo.json
+  cargo run -- compile demo.json -o output.wav --stems
+  cargo run -- eval output.wav
+  cargo run -- serve
+  ```
+- **MCP Tools (`cargo run -- serve`)**:
+  - `auralis_init_manifest`
+  - `auralis_compile_audio`
+  - `auralis_inspect_soundfont`
+  - `auralis_eval_wav`
+
+### Vessel (`v0.6.0`)
+- **Repository**: https://github.com/WinPhay/vessel
+- **License**: Apache-2.0
+- **Summary**: Local, time-traveling container sandbox engine for autonomous AI coding agents.
+- **Capabilities**:
+  - Host Shield: Executes commands inside an isolated container with only `/workspace` mounted.
+  - Headless Browser Sandbox: Built-in containerized Chromium (`vessel_browse_url`, `vessel_screenshot`, `vessel_extract_page`).
+  - Resource Quotas & Network Isolation: cgroup RAM/CPU limits and `--network none` airgap mode.
+  - Time-Travel Rollbacks & Myers Delta Diffs: Instant filesystem checkpoints (`vessel_checkpoint`, `vessel_rollback`, `vessel_checkpoint_diff`).
+  - Workspace Access Policy & Git Worktree Shield: `--read-only`, `--ro-path`, `--deny-path`, and `--worktree` session branches (`vessel_worktree_status`, `vessel_worktree_diff`, `vessel_worktree_commit`).
+  - Ephemeral Service Mesh: Isolated PostgreSQL/Redis/MongoDB sidecars (`vessel_spawn_service`) with loopback-only `--service-port` ingress.
+  - Secret Redaction & DLP Vault: Automatic egress redaction with controlled `--secret KEY=VALUE` injection.
+- **Install**:
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/WinPhay/vessel/main/scripts/install.sh | bash
+  ```
+
+---
+
+## 3. Network Nodes
+
+- **Primary Hub**: `https://www.celestrionx.com` — Umbrella directory with sticky Human / Agent mode toggle.
+- **Engineering Core**: `https://winphay.celestrionx.com` — Systems architecture notes and developer portfolio.
+- **Stellar Publishing**: `https://stellarpub.celestrionx.com` — Burmese digital literature catalog (`https://github.com/WinPhay/burmese-stories`) and OTA `.pck` distribution.
+- **GitHub Organization**: `https://github.com/Celestrionx` (`https://github.com/Celestrionx/.github`)
+
+---
+
+## 4. Technical Principles
+
+1. **First-Principles Decomposition**: Strip convention; anchor architecture to bedrock constraints.
+2. **Zero Slop & High Signal**: Maximize information density; eliminate filler.
+3. **Edge-First Distribution**: Cloudflare-proxied edge routing with Full TLS enforcement.
+4. **Deterministic Verification**: Branch isolation (`feat/*`, `fix/*`) and explicit post-verification gates.
+
+---
+
+## 5. Contact
+
+- `hello@celestrionx.com`

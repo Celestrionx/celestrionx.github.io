@@ -1,0 +1,25 @@
+# CelestrionX
+
+> CelestrionX (`www.celestrionx.com`) is an independent systems engineering, autonomous agent tooling, and digital publishing umbrella.
+
+## Machine-Readable Endpoints
+
+- [Agent Onboarding Contract](https://www.celestrionx.com/agents.md): Instructions for AI coding agents and MCP clients inspecting or integrating CelestrionX systems.
+- [Homepage Markdown Mirror](https://www.celestrionx.com/index.md): Pure Markdown representation of the primary website.
+- [Full Ecosystem Context](https://www.celestrionx.com/llms-full.txt): Extended technical specifications, CLI commands, and MCP tool surfaces.
+
+## Core Open-Source Systems
+
+- [Auralis (v0.2.0)](https://github.com/Celestrionx/auralis): Headless audio graph compiler and auditory telemetry engine in pure Rust with a built-in stdio MCP server (`auralis_init_manifest`, `auralis_compile_audio`, `auralis_inspect_soundfont`, `auralis_eval_wav`).
+- [Vessel (v0.6.0)](https://github.com/WinPhay/vessel): Local, time-traveling container sandbox engine for autonomous AI coding agents with filesystem checkpoints, Myers delta diffs, headless Chromium, DLP redaction, git worktree isolation, and native stdio MCP tools.
+- [CelestrionX Organization](https://github.com/Celestrionx): GitHub organization hub and profile metadata (`Celestrionx/.github`).
+
+## Network Nodes
+
+- [Primary Hub](https://www.celestrionx.com): Umbrella directory and dual Human/Agent entry surface.
+- [Engineering Core](https://winphay.celestrionx.com): Systems notes, architecture logs, and personal portfolio (`WinPhay`).
+- [Stellar Publishing](https://stellarpub.celestrionx.com): Burmese digital literature platform (`burmese-stories`) and OTA Godot 4 `.pck` story distribution.
+
+## Contact
+
+- Email: `hello@celestrionx.com`

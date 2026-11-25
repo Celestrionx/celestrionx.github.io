@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="human">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CelestrionX — Systems · Intelligence · Culture</title>
+  <meta name="description" content="CelestrionX engineers resilient runtimes, autonomous agent infrastructure, and durable digital publishing. Dual Human and Agent interface." />
+  <link rel="canonical" href="https://www.celestrionx.com" />
+  <link rel="alternate" type="text/markdown" href="https://www.celestrionx.com/index.md" />
+  <link rel="help" type="text/plain" href="https://www.celestrionx.com/llms.txt" />
+  <link rel="help" type="text/plain" href="https://www.celestrionx.com/llms-full.txt" />
+  <link rel="icon" type="image/png" href="assets/celestrionx-logo.png" />
+
+  <meta property="og:title" content="CelestrionX — Systems · Intelligence · Culture" />
+  <meta property="og:description" content="Engineering resilient runtimes, autonomous agent frameworks, and durable digital artifacts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.celestrionx.com" />
+  <meta property="og:image" content="https://www.celestrionx.com/assets/celestrionx-social-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CelestrionX — Systems · Intelligence · Culture" />
+  <meta name="twitter:description" content="Engineering resilient runtimes, autonomous agent frameworks, and durable digital artifacts." />
+  <meta name="twitter:image" content="https://www.celestrionx.com/assets/celestrionx-social-card.png" />
+
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get("mode");
+        var stored = localStorage.getItem("cx-view-mode");
+        if (q === "agent" || (!q && stored === "agent")) {
+          document.documentElement.setAttribute("data-mode", "agent");
+        }
+      } catch (_) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CelestrionX",
+      "url": "https://www.celestrionx.com",
+      "logo": "https://www.celestrionx.com/assets/celestrionx-logo.png",
+      "email": "hello@celestrionx.com",
+      "sameAs": [
+        "https://github.com/Celestrionx"
+      ]
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="#top" aria-label="CelestrionX Home">
+        <img class="brand-mark" src="assets/celestrionx-logo.png" alt="CelestrionX CX mark" />
+        <span class="brand-text">
+          <span class="brand-name">CELESTRIONX</span>
+          <span class="brand-sub">SYSTEMS · INTELLIGENCE · CULTURE</span>
+        </span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#pillars">Pillars</a>
+        <a href="#systems">Systems</a>
+        <a href="#principles">Principles</a>
+        <a href="#network">Network</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="mode-toggle" role="tablist" aria-label="Interface mode">
+          <button
+            type="button"
+            class="mode-btn"
+            role="tab"
+            data-mode-target="human"
+            aria-selected="true"
+            aria-controls="human-view"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path>
+            </svg>
+            Human
+          </button>
+          <button
+            type="button"
+            class="mode-btn"
+            role="tab"
+            data-mode-target="agent"
+            aria-selected="false"
+            aria-controls="agent-view"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            Agent
+          </button>
+        </div>
+        <span class="kbd-hint" title="Toggle Human / Agent mode">Ctrl+.</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HUMAN MODE -->
+    <div id="human-view">
+      <section class="hero">
+        <div class="container">
+          <div class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            SYSTEMS · INTELLIGENCE · CULTURE
+          </div>
+          <h1>Resilient runtimes, autonomous agents, and durable culture.</h1>
+          <p class="hero-lead">
+            CelestrionX is an independent engineering umbrella building isolated execution sandboxes,
+            headless creative compilers, and digital literature pipelines—readable by humans and AI agents alike.
+          </p>
+
+          <div class="prompt-bar" aria-label="Agent onboarding command">
+            <code class="prompt-code">
+              Read <span class="accent">https://www.celestrionx.com/agents.md</span> and map the CelestrionX ecosystem
+            </code>
+            <div class="prompt-actions">
+              <button type="button" class="btn" id="copy-prompt-btn">Copy Prompt</button>
+              <button type="button" class="btn btn-primary" id="switch-agent-btn">Agent View →</button>
+            </div>
+          </div>
+
+          <div class="banner-frame">
+            <img src="assets/celestrionx-banner.png" alt="CelestrionX — Systems, Intelligence, Culture" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pillars">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">01 / Topology</p>
+              <h2 class="section-title">Three Operational Pillars</h2>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <div>
+                <div class="card-kicker">PILLAR 01</div>
+                <h3>Systems &amp; Runtimes</h3>
+                <p>
+                  Low-overhead container sandboxes, time-traveling workspace checkpoints,
+                  and pure-Rust headless compilers engineered for deterministic verification.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>vessel · auralis</span>
+                <span>Rust / Go</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div>
+                <div class="card-kicker">PILLAR 02</div>
+                <h3>Agentic Architectures</h3>
+                <p>
+                  Native stdio MCP servers, isolated git-worktree execution shields,
+                  and markdown-first state protocols that keep autonomous agents verifiable.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>MCP · llms.txt</span>
+                <span>Zero-Slop</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div>
+                <div class="card-kicker">PILLAR 03</div>
+                <h3>Digital Culture</h3>
+                <p>
+                  Preserving oral traditions and contemporary Burmese literature via
+                  high-craft web editions and over-the-air Godot 4 story packages.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>stellarpub</span>
+                <span>OTA .pck</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="systems">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">02 / Public Systems</p>
+              <h2 class="section-title">Active Repositories &amp; Surfaces</h2>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <a class="card" href="https://github.com/Celestrionx/auralis" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="card-kicker">AUDIO COMPILER · MCP</div>
+                <h3>
+                  Auralis
+                  <span class="tag tag-cyan">v0.2.0 · MIT</span>
+                </h3>
+                <p>
+                  Headless audio graph compiler and auditory telemetry engine in pure Rust.
+                  Synth, SoundFont2, and WAV backends with RIFF loop chunks and built-in MCP diagnostics.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>github.com/Celestrionx/auralis</span>
+                <span>Inspect →</span>
+              </div>
+            </a>
+
+            <a class="card" href="https://github.com/WinPhay/vessel" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="card-kicker">AGENT SANDBOX · MCP</div>
+                <h3>
+                  Vessel
+                  <span class="tag tag-violet">v0.6.0 · Apache-2.0</span>
+                </h3>
+                <p>
+                  Local time-traveling container sandbox for AI coding agents. Filesystem checkpoints,
+                  Myers delta diffs, DLP secret redaction, headless Chromium, and git worktree shields.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>github.com/WinPhay/vessel</span>
+                <span>Inspect →</span>
+              </div>
+            </a>
+
+            <a class="card" href="https://stellarpub.celestrionx.com" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="card-kicker">DIGITAL PUBLISHING</div>
+                <h3>
+                  StellarPub
+                  <span class="tag tag-emerald">Live</span>
+                </h3>
+                <p>
+                  Burmese digital literature platform and verified OTA catalog distributing
+                  illustrated stories and compiled Godot 4 narrative packages.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>stellarpub.celestrionx.com</span>
+                <span>Visit →</span>
+              </div>
+            </a>
+
+            <a class="card" href="https://winphay.celestrionx.com" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="card-kicker">ENGINEERING CORE</div>
+                <h3>
+                  WinPhay Notes
+                  <span class="tag tag-emerald">Live</span>
+                </h3>
+                <p>
+                  Operator portfolio, systems architecture logs, and field notes across
+                  distributed infrastructure and applied intelligence.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span>winphay.celestrionx.com</span>
+                <span>Visit →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="principles">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">03 / Operating Invariants</p>
+              <h2 class="section-title">Technical Principles</h2>
+            </div>
+          </div>
+
+          <div class="principles-grid">
+            <div class="principle-row">
+              <strong>First-Principles Decomposition</strong>
+              <span>Strip convention and hype; anchor architecture to physical limits and unit economics.</span>
+            </div>
+            <div class="principle-row">
+              <strong>Zero Slop &amp; High Signal</strong>
+              <span>Maximize information density for both human readers and machine context windows.</span>
+            </div>
+            <div class="principle-row">
+              <strong>Edge-First Distribution</strong>
+              <span>Cloudflare-proxied static delivery with Full TLS enforcement and zero runtime bloat.</span>
+            </div>
+            <div class="principle-row">
+              <strong>Deterministic Verification</strong>
+              <span>Branch-isolated execution, explicit `AGENTS.md` contracts, and verified receipts before merge.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="network">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">04 / Machine &amp; Human Surfaces</p>
+              <h2 class="section-title">Endpoints</h2>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <a class="card" href="agents.md">
+              <div>
+                <div class="card-kicker">AGENT CONTRACT</div>
+                <h3>/agents.md</h3>
+                <p>Onboarding instructions, MCP tool surfaces, and repo invariants for coding agents.</p>
+              </div>
+              <div class="card-meta">
+                <span>text/markdown</span>
+                <span>Open →</span>
+              </div>
+            </a>
+
+            <a class="card" href="llms.txt">
+              <div>
+                <div class="card-kicker">LLM INDEX</div>
+                <h3>/llms.txt</h3>
+                <p>Concise directory mapping CelestrionX repositories, network hubs, and full specs.</p>
+              </div>
+              <div class="card-meta">
+                <span>text/plain</span>
+                <span>Open →</span>
+              </div>
+            </a>
+
+            <a class="card" href="llms-full.txt">
+              <div>
+                <div class="card-kicker">FULL REFERENCE</div>
+                <h3>/llms-full.txt</h3>
+                <p>Complete ecosystem capabilities, CLI quickstarts, and architecture summary.</p>
+              </div>
+              <div class="card-meta">
+                <span>text/plain</span>
+                <span>Open →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- AGENT MODE -->
+    <section id="agent-view" class="agent-shell" aria-label="Machine-readable agent interface">
+      <div class="container">
+        <div class="agent-banner">
+          <div>
+            <h1>AGENT INTERFACE // RAW MARKDOWN &amp; LLMS.TXT</h1>
+            <p>
+              Direct machine-readable endpoints served natively from GitHub Pages.
+              Run <code>curl -sL https://www.celestrionx.com/llms.txt</code> or switch tabs below.
+            </p>
+          </div>
+          <div class="prompt-actions">
+            <button type="button" class="btn btn-primary" id="copy-agent-doc">Copy Markdown</button>
+            <a class="btn" id="agent-raw-link" href="agents.md" target="_blank" rel="noopener noreferrer">Open Raw ↗</a>
+          </div>
+        </div>
+
+        <div class="agent-toolbar">
+          <div class="doc-tabs" role="tablist" aria-label="Agent documents">
+            <button type="button" class="doc-tab" role="tab" data-doc="agents.md" aria-selected="true">/agents.md</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="llms.txt" aria-selected="false">/llms.txt</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="llms-full.txt" aria-selected="false">/llms-full.txt</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="index.md" aria-selected="false">/index.md</button>
+          </div>
+        </div>
+
+        <div class="agent-code-wrap">
+          <pre id="agent-doc-content" class="agent-pre">Loading /agents.md...</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 CelestrionX · Systems engineered for endurance.</span>
+      <div class="footer-links">
+        <a href="https://github.com/Celestrionx" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="agents.md">/agents.md</a>
+        <a href="llms.txt">/llms.txt</a>
+        <a href="index.md">/index.md</a>
+        <a href="mailto:hello@celestrionx.com">hello@celestrionx.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
