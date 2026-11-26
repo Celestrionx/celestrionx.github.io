@@ -15,8 +15,9 @@ CelestrionX (`https://www.celestrionx.com`) is a systems engineering, agent infr
 
 ## MCP-Ready Tools
 
-### 1. Auralis (`v0.2.0`) — Headless Audio Graph Compiler
+### 1. Auralis (`v0.2.1`) — Headless Audio Graph Compiler
 - Repository: `https://github.com/Celestrionx/auralis`
+- Live audio demos: `https://www.celestrionx.com/#demos`
 - Runtime: Pure Rust CLI + stdio MCP server (`cargo run -- serve`)
 - Synthesis backends: `Synth` (oscillators, unison spread, 2-op FM, dynamic filters), `SoundFont` (`rustysynth` SF2), `Sample` (pitched WAV one-shots/glides)
 - Game/DAW export: 16/32-bit WAV with RIFF `smpl` loop chunks, OGG Vorbis with `LOOPSTART`/`LOOPLENGTH` tags, equal-length `--stems`

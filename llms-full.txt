@@ -15,8 +15,9 @@ CelestrionX organizes engineering work across three operational pillars:
 
 ## 2. Open-Source Systems
 
-### Auralis (`v0.2.0`)
+### Auralis (`v0.2.1`)
 - **Repository**: https://github.com/Celestrionx/auralis
+- **Audio Demos**: `https://www.celestrionx.com/#demos` (`power-metal-preview.ogg`, `synthwave-preview.ogg`, `sfx-laser-shoot.ogg`)
 - **License**: MIT
 - **Summary**: Headless Audio Graph Compiler & Auditory Telemetry Engine in pure Rust for autonomous AI agents.
 - **Capabilities**:

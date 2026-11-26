@@ -10,7 +10,7 @@
 
 ## Core Open-Source Systems
 
-- [Auralis (v0.2.0)](https://github.com/Celestrionx/auralis): Headless audio graph compiler and auditory telemetry engine in pure Rust with a built-in stdio MCP server (`auralis_init_manifest`, `auralis_compile_audio`, `auralis_inspect_soundfont`, `auralis_eval_wav`).
+- [Auralis (v0.2.1)](https://github.com/Celestrionx/auralis): Headless audio graph compiler and auditory telemetry engine in pure Rust with a built-in stdio MCP server (`auralis_init_manifest`, `auralis_compile_audio`, `auralis_inspect_soundfont`, `auralis_eval_wav`). ([Audio Demos](https://www.celestrionx.com/#demos))
 - [Vessel (v0.6.0)](https://github.com/WinPhay/vessel): Local, time-traveling container sandbox engine for autonomous AI coding agents with filesystem checkpoints, Myers delta diffs, headless Chromium, DLP redaction, git worktree isolation, and native stdio MCP tools.
 - [CelestrionX Organization](https://github.com/Celestrionx): GitHub organization hub and profile metadata (`Celestrionx/.github`).
 

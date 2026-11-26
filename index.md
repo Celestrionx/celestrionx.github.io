@@ -27,10 +27,16 @@ Oral-tradition and contemporary Burmese digital literature (`stellarpub.celestri
 
 | System | Role | Status | Link |
 | :--- | :--- | :--- | :--- |
-| **Auralis** | Headless Rust audio graph compiler, DSP telemetry & MCP server | `v0.2.0` | https://github.com/Celestrionx/auralis |
+| **Auralis** | Headless Rust audio graph compiler, DSP telemetry & MCP server | `v0.2.1` | https://github.com/Celestrionx/auralis |
 | **Vessel** | Time-traveling container sandbox & DLP shield for AI agents | `v0.6.0` | https://github.com/WinPhay/vessel |
 | **StellarPub** | Burmese digital literature & OTA Godot 4 `.pck` catalog | `Live` | https://stellarpub.celestrionx.com |
 | **WinPhay Core** | Systems architecture notes & engineering portfolio | `Live` | https://winphay.celestrionx.com |
+
+## Audible Showcases (`Auralis`)
+
+- [Power Metal Preview (18s OGG)](https://www.celestrionx.com/assets/audio/power-metal-preview.ogg)
+- [Synthwave Preview (18s OGG)](https://www.celestrionx.com/assets/audio/synthwave-preview.ogg)
+- [Procedural Laser Shoot SFX (1.2s OGG)](https://www.celestrionx.com/assets/audio/sfx-laser-shoot.ogg)
 
 ## Technical Principles
 
