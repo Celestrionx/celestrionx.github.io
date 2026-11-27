@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CelestrionX — Systems · Intelligence · Culture</title>
   <meta name="description" content="CelestrionX engineers resilient runtimes, autonomous agent infrastructure, and durable digital publishing. Dual Human and Agent interface." />
-  <link rel="canonical" href="https://www.celestrionx.com" />
+  <link rel="canonical" href="https://www.celestrionx.com/" />
   <link rel="alternate" type="text/markdown" href="https://www.celestrionx.com/index.md" />
   <link rel="help" type="text/plain" href="https://www.celestrionx.com/llms.txt" />
   <link rel="help" type="text/plain" href="https://www.celestrionx.com/llms-full.txt" />
@@ -54,7 +54,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand-link" href="#top" aria-label="CelestrionX Home">
-        <img class="brand-mark" src="assets/celestrionx-logo.png" alt="CelestrionX CX mark" />
+        <img class="brand-mark" src="assets/celestrionx-logo-64.webp" alt="CelestrionX CX mark" width="32" height="32" decoding="async" />
         <span class="brand-text">
           <span class="brand-name">CELESTRIONX</span>
           <span class="brand-sub">SYSTEMS · INTELLIGENCE · CULTURE</span>
@@ -107,7 +107,7 @@
 
   <main id="top">
     <!-- HUMAN MODE -->
-    <div id="human-view">
+    <div id="human-view" role="tabpanel">
       <section class="hero">
         <div class="container">
           <div class="eyebrow">
@@ -131,7 +131,7 @@
           </div>
 
           <div class="banner-frame">
-            <img src="assets/celestrionx-banner.png" alt="CelestrionX — Systems, Intelligence, Culture" />
+            <img src="assets/celestrionx-banner.webp" srcset="assets/celestrionx-banner-640.webp 640w, assets/celestrionx-banner.webp 1280w" sizes="(max-width: 680px) 94vw, 1072px" alt="CelestrionX — Systems, Intelligence, Culture" width="1280" height="400" fetchpriority="high" decoding="async" />
           </div>
         </div>
       </section>
@@ -400,7 +400,7 @@
     </div>
 
     <!-- AGENT MODE -->
-    <section id="agent-view" class="agent-shell" aria-label="Machine-readable agent interface">
+    <section id="agent-view" class="agent-shell" role="tabpanel" aria-label="Machine-readable agent interface">
       <div class="container">
         <div class="agent-banner">
           <div>
@@ -418,15 +418,15 @@
 
         <div class="agent-toolbar">
           <div class="doc-tabs" role="tablist" aria-label="Agent documents">
-            <button type="button" class="doc-tab" role="tab" data-doc="agents.md" aria-selected="true">/agents.md</button>
-            <button type="button" class="doc-tab" role="tab" data-doc="llms.txt" aria-selected="false">/llms.txt</button>
-            <button type="button" class="doc-tab" role="tab" data-doc="llms-full.txt" aria-selected="false">/llms-full.txt</button>
-            <button type="button" class="doc-tab" role="tab" data-doc="index.md" aria-selected="false">/index.md</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="agents.md" aria-selected="true" aria-controls="agent-doc-content">/agents.md</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="llms.txt" aria-selected="false" aria-controls="agent-doc-content">/llms.txt</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="llms-full.txt" aria-selected="false" aria-controls="agent-doc-content">/llms-full.txt</button>
+            <button type="button" class="doc-tab" role="tab" data-doc="index.md" aria-selected="false" aria-controls="agent-doc-content">/index.md</button>
           </div>
         </div>
 
         <div class="agent-code-wrap">
-          <pre id="agent-doc-content" class="agent-pre">Loading /agents.md...</pre>
+          <pre id="agent-doc-content" class="agent-pre" role="tabpanel">Loading /agents.md...</pre>
         </div>
       </div>
     </section>
@@ -445,6 +445,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>

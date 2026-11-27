@@ -612,4 +612,9 @@ html:not([data-mode="agent"]) #agent-view {
   .brand-sub {
     display: none;
   }
+
+  .mode-btn,
+  .doc-tab {
+    min-height: 40px;
+  }
 }
